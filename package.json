@@ -1,0 +1,26 @@
+{
+  "name": "my-react-practice",
+  "version": "1.0.0",
+  "description": "\"React app from scratch with major concepts covered \"",
+  "keywords": [
+    "basics"
+  ],
+  "homepage": "https://github.com/SudhakarGarikipati/my-react-practice#readme",
+  "bugs": {
+    "url": "https://github.com/SudhakarGarikipati/my-react-practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudhakarGarikipati/my-react-practice.git"
+  },
+  "license": "ISC",
+  "author": "Sudhakar",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4"
+  }
+}
