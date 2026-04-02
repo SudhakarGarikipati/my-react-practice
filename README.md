@@ -31,4 +31,32 @@ Create react app from scratch to produciton ready.
     - nodemodules folder is also created on parcel bundler install, all the dependencies of parser  is "Transitive dependencies"
     - If we have package.json and package.lock we can recreates nodemodules.
 
+    -- Build command
+    -- npx parcel index.html
+    -- Avoid CDN link to import react and react dom into you app, this introduces unnecessary netowrk calls.
+    -- use node mdules for the same in your app.
 
+    --# Parcel is Bundler gives super power to app, and makes react app faster.
+        Dev Build
+        Create local server
+        Automaticall frefreshing on save 
+        hmr - Hot module replacement.
+        File watcher algorithm
+        Caching for faster builds
+        Immage Optimization
+        Minification production builds
+        Bundling
+        Compression
+        Consistent Hashing
+        Differential Bundling - To support old browsers.
+        Error Handling and Diagnosis
+        Support https hosting
+        Tree shaking :- Remove unused code for
+        Different dev and production builds
+
+        -npx parcel build index.html (production ready build)
+        -browserslist --Application supported in the browser versions
+
+
+
+    -- import REACT from "react"  , this result in error if you do not consume scirt in html as module.
