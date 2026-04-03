@@ -32,14 +32,14 @@ Create react app from scratch to produciton ready.
     - If we have package.json and package.lock we can recreates nodemodules.
 
     -- Build command
-    -- npx parcel index.html
+    -- npx parcel index.html executes npm package parcel and give source file as index.html
     -- Avoid CDN link to import react and react dom into you app, this introduces unnecessary netowrk calls.
     -- use node mdules for the same in your app.
 
     --# Parcel is Bundler gives super power to app, and makes react app faster.
         Dev Build
         Create local server
-        Automaticall frefreshing on save 
+        Automaticall refreshing on save 
         hmr - Hot module replacement.
         File watcher algorithm
         Caching for faster builds
@@ -57,6 +57,38 @@ Create react app from scratch to produciton ready.
         -npx parcel build index.html (production ready build)
         -browserslist --Application supported in the browser versions
 
-
+    - npx parcel index.html can be replace wiht npm run start/npm start
+    - npm parcel build index.html can be simplified to industry standard with npm run build.
+    - This all can be achived by adding configuration script in packages.json file.
 
     -- import REACT from "react"  , this result in error if you do not consume scirt in html as module.
+    -- React.createElement("type",{props},"Child/innerobject") create object when render to DOM becomes HTML element.
+    -- root.render(jselement) on will replace everything in root with html element from jselement
+
+    --JSX is not html in js file, jsx is hrml like syntax in javascript file.
+    -JSX is simplified sytax for creating react elements, it is html like syntax.
+
+    Javascript is code which js engine can understand
+    js engine only unerstand ecma script(es6)
+    jsx is not understood by js engine.
+       (babel => transpiler)
+    jsx => React.createElement => ReactElement js Object => HTMLElement(render)
+
+    Code is transpiled before going to jsengine, parcel take help of bable to transpile the jsx code to react code understood by dom. 
+
+    Attributes in jsx follow camelCase, but in html it is all lowercase.
+
+    //Components
+    // Class base components -old way
+        // class Header extends React.Component{
+        //     render(){
+        //         return <h1 className="header"> Hello, React from Class Component 🎶🎶🐧</h1>
+        //     }
+        // }
+    // function base components - new way this is a normal javascript function that returns some jsx
+        // const Header = () => {
+        //     return <h1 className="header"> Hello, React from Function Component 🎶🎶🐧</h1>
+        // }
+
+    // Component composition:- Components in componet **
+    // Jsx prevents cross site scripting attacks, atomatically taken care by react
