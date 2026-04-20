@@ -16,7 +16,7 @@
   "license": "ISC",
   "author": "Sudhakar",
   "type": "commonjs",
-  "scripts": {  
+  "scripts": {
     "test": "jest",
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -24,7 +24,12 @@
   "dependencies": {
     "parcel": "^2.16.4",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "web-vitals": "^5.2.0"
   },
-  "browserslist": ["last 2 version", "> 1%", "not dead"]
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not dead"
+  ]
 }
