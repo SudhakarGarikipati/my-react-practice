@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const Counter = (props) => {
   const init = parseInt(props.init || 0);
   const end = parseInt(props.end || 0);
+  const setTotal = props.addTotal
   const [count, setCount] = useState(init);
   const [start, setStart] = useState(false);
 
@@ -15,6 +16,7 @@ const Counter = (props) => {
       if (count >= end) return;
       var timer = setInterval(() => {
         setCount(count + 1);
+        setTotal((total) => (total + 1));
       }, 1000);
       return () => {
         clearInterval(timer);

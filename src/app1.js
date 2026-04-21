@@ -42,6 +42,7 @@ const App1 = () => {
   return (
     <div>
      <Counter init={10} />
+     <User/>
     </div>
   );
 };
